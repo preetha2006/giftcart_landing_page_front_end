@@ -1,0 +1,589 @@
+* {
+    margin: 5px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    font-size: 70%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header .name {
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header .navbar a {
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+header .navbar a:hover {
+    cursor: pointer;
+    color: rgb(188, 130, 223);
+}
+
+header .icons a {
+    font-size: 1.5rem;
+    color: black;
+}
+
+header .icons a:hover {
+    cursor: pointer;
+    color: rgb(188, 130, 223);
+}
+
+span {
+    font-size: 5rem;
+    color: rgb(123, 123, 229);
+}
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    padding: 0.7rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    color: black;
+    font-size: 1.5rem;
+    border: solid;
+    border-color: rgba(0, 0, 0, .1);
+    padding: 0.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+header .fa-bars:hover {
+    color: gray;
+}
+
+
+/*Home section*/
+section {
+    padding: 2rem 9%;
+}
+
+.btn {
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid yellow;
+    padding: .9rem 3.5rem;
+    border-radius: 5rem;
+    font: 1.2rem sans-serif;
+    background: #333;
+    color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(188, 130, 223);
+    color: black;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./images/gift_bg.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    padding-left: 50%;
+    padding-right: 10%;
+}
+
+.home .content h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-shadow: 2px 2px rgb(139, 119, 229);
+    margin-bottom: 1rem;
+}
+
+.home .content span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 0.5rem;
+    color: rgb(139, 119, 229);
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*about section*/
+
+.about .heading {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: rgba(147, 120, 237, 0.155);
+}
+
+.about .heading span {
+    font-size: 3rem;
+    color: rgb(162, 144, 241);
+}
+
+.about .row {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .row .gif {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .gif img {
+    width: 100%;
+    border: 7px solid #fff;
+    box-shadow: 0 .5rem 1rem #333;
+    border-radius: 5rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .gif h3 {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(160, 104, 237, 0.5);
+    padding: 1rem 2rem;
+    text-align: center;
+    width: 100%;
+    color: #eeeeee;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .content h2 {
+    font-size: 3rem;
+    color: black;
+    padding-bottom: 1rem;
+}
+
+.about .row .content p {
+    font-size: 1.5rem;
+    color: rgb(120, 118, 118);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 1rem;
+}
+
+/*icons section*/
+.icons_cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.icons_cont .icons {
+    background-color: #eee;
+    border: .1rem solid rgba(188, 143, 216, 0.311);
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    flex: 1 1 5rem;
+}
+
+.icons_cont .icons img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.icons_cont .icons .info h3 {
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.icons_cont .icons .info span {
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: .5rem;
+}
+
+/*products section*/
+
+.products h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: rgba(147, 120, 237, 0.155);
+}
+
+.products span {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.products .productbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.products .productbox .box {
+    flex: 1 1 25rem;
+    box-shadow: 0 .5rem 1rem #333;
+    border-radius: 1rem;
+    border: .1rem solid rgba(188, 143, 216, 0.311);
+    align-items: center;
+    position: relative;
+}
+
+.products .productbox .box .discount {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(178, 147, 221, 0.724);
+    padding: .7rem 2rem;
+    color: #eee;
+    z-index: 1;
+}
+
+.products .productbox .box .image {
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.products .productbox .box .image img {
+    width: 270px;
+    height: 330px;
+}
+
+.products .productbox .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.products .productbox .box .image .icon {
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.products .productbox .box:hover .image .icon {
+    bottom: 0;
+}
+
+.products .productbox .box .image .icon a {
+    line-height: 4rem;
+    height: 4rem;
+    width: 50%;
+    font-size: 1.5rem;
+    background-color: rgb(159, 129, 208);
+    color: #eee;
+}
+
+.products .productbox .box .image .icon .cart {
+    width: 100%;
+    border-left: 2rem solid rgb(159, 129, 208);
+    border-right: 2rem solid rgb(159, 129, 208);
+}
+
+.products .productbox .box .image .icon a:hover {
+    background-color: #333;
+}
+
+.products .productbox .box .content h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.products .productbox .box .content .price {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(159, 129, 208);
+}
+
+.products .productbox .box .content .price span {
+    font-size: 1rem;
+    color: #504f4f;
+    text-decoration: line-through;
+}
+
+/*review section*/
+
+.reviews h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: rgba(147, 120, 237, 0.155);
+}
+
+.reviews span {
+    font-size: 3rem;
+}
+
+.reviews .box .stars {
+    font-size: 1.7rem;
+    color: rgb(172, 116, 231);
+}
+
+.reviews .box .user p {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.reviews .box-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.reviews .box-cont .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.reviews .box-cont .box:hover {
+    transform: scale(1.1);
+}
+
+.reviews .box-cont .box .fa-quote-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: rgba(166, 122, 226, 0.454);
+}
+
+.reviews .box-cont .box .user .name {
+    padding-top: 2rem;
+    font-size: 2.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.reviews .box-cont .box .user span {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reviews .box-cont .box .user img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+/*contact section*/
+.contact h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: rgba(147, 120, 237, 0.155);
+}
+.contact span{
+    font-size: 3rem;
+}
+.contact .box-contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    align-items: center;
+}
+.contact .box-contact form{
+    flex: 1 1 40rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+    margin: .7rem 0;
+}
+.contact .box-contact form textarea{
+    height: 15rem;
+    resize: normal;
+}
+.contact .box-contact .image{
+    flex: 1 1 40rem;
+}
+
+.contact .box-contact .image img{
+    width: 100%;
+}
+
+.contact .box-contact form .box{
+    padding: .5rem;
+    border: .1rem solid rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    color: #504f4f;
+    width: 100%;
+}
+
+.contact .box-contact form .box:focus{
+    border-color: rgb(159, 142, 235);
+}
+
+/*footer*/
+.footer .box-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer .box-cont .box{
+    flex: 1 1 25rem;
+}
+
+.footer .box-cont .box h3{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem 0;
+    color: black;
+}
+
+.footer .box-cont .box a{
+    display: block;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #504f4f;
+    padding: 1rem 0;
+}
+
+.footer .box-cont .box a:hover{
+    color: rgb(139, 119, 229);
+}
+
+.footer .box-cont .box img{
+    height: 3rem;
+}
+
+.footer .credit {
+    font-size: 1.7rem;
+    background-color: white;
+    padding: 0.7rem 9%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.205);
+}
+
+
+.footer .credit span{
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+/*media queries*/
+@media(max-width:991px) {
+    html {
+        font-size: 100%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 5rem;
+    }
+}
+
+@media(max-width:768px) {
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #eee;
+        border-top: .2rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked~.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(87, 74, 128, 0.1);
+        display: block;
+    }
+
+    .home {
+        background-position: right;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    .home .content h2 {
+        font-size: 5rem;
+    }
+
+    .home .content span {
+        font-size: 3.5rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+}
