@@ -1,7 +1,7 @@
-Gift Cart Webpage
+#GIFTCART WABPAGE
 A responsive webpage for Gift Cart that showcases the company's products, customer reviews, contact information, and various sections for an enhanced user experience. This webpage provides an attractive and user-friendly interface for customers looking to purchase unique gift items.
 
-Features
+##Features
 Home Section: A welcoming message with an invitation to shop.
 About Us Section: Information about the company's values and unique offerings.
 Products Section: Showcases the most popular gift items with discounts, including a convenient "Add to Cart" feature.
@@ -9,18 +9,18 @@ Customer Reviews: Displays reviews with a 5-star rating system.
 Contact Us Section: A form for users to reach out for inquiries or support.
 Footer: Contains quick links, extra links for users' profiles and favorites, locations, and contact details.
 
-Technologies Used
+##Technologies Used
 HTML5: Structure and layout of the webpage.
 CSS3: Styling for design, layout, and responsiveness.
 Font Awesome: Icons for navigation, ratings, and actions.
 GIFs and Images: Visual appeal and branding of the site.
 
-File Structure
+##File Structure
 index.html: Main HTML structure of the webpage.
 gift_style.css: Stylesheet containing all the CSS styling.
 /images: Folder for all images used on the webpage, including icons, product images, and decorative elements.
 
-Sections Overview
+##Sections Overview
 Header:
 Logo and navigation links to different sections.
 Shopping cart, user profile, and favorites icons.
