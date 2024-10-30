@@ -52,4 +52,4 @@ This project is open-source and available for anyone to modify or expand.
 Created by Preetha Suresh
 
 
-To view
+To view https://github.com/preetha2006/giftcart_landing_page_front_end.git
